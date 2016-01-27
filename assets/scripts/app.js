@@ -2,17 +2,30 @@
 function getElem(id) {
     return document.getElementById(id);
 }
+var roster = [{
+        name: 'placeholder',
+    },]
+// creates player object from input fields
+function submitPlayer() {
+    for (var i = 0; i < roster.length; i++) {
+        if (roster[i].name !== getElem("playerName").value) {
+            var currentPlayer = {
+                name: getElem("playerName").value,
+                position: getElem("position").value,
+                number: getElem("playerNumber").value
+            }
 
-
-function submitPlayer(){
-    var currentPlayer = {
-        name: getElem("playerName").value,
-        position: getElem("position").value,
-        number: getElem("playerNumber").value
+        } else {
+            alert('player already exist please check roster and try again')
+            clearFields()
+            return
+        }
     }
     // push to current player
+    roster.push(currentPlayer)
     drawPlayerOnScreen(currentPlayer)
 }
+// draws the player card to the screen
 function drawPlayerOnScreen(currentPlayer){
     var rosterElem = $('.playerRoster')
     var playerElem = document.createElement('div');
@@ -27,5 +40,12 @@ function drawPlayerOnScreen(currentPlayer){
     <div class="btn-group"> 
     <button>Remove</button>
     </div>`
-    rosterElem.append(playerElem);    
+    rosterElem.append(playerElem);  
+    clearFields()  
+}
+// clears the input fields after creating the player
+function clearFields(){
+    getElem("playerName").value = ""
+    getElem("position").value = ""
+    getElem("playerNumber").value = ""
 }

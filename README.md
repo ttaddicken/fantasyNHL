@@ -13,11 +13,8 @@ NFL Roster
 
 
 
-display the player's name
-display the player's position
-display the player's number
-Create a from inside the "player-form" div
-Add an input field for Player Name, Position, and Number
+
+
 When the add button is pressed, it should automatically add a player to the Roster.
 Create a constructor for Player that accepts 3 arguments, Name, Position, Number.
 When the Add button is pressed, a new player is created and added to the Players array.
@@ -46,3 +43,8 @@ Inside the player-roster div, add another dive with the class "player-card"
 Create a repository for My_Roster.
 Set the player-card class to "display:inline-block" and add a "1px solid black" border
 Add an image to the player card with the src = "http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/"
+display the player's name
+display the player's position
+display the player's number
+Create a from inside the "player-form" div
+Add an input field for Player Name, Position, and Number

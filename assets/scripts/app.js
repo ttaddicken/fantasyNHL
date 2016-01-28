@@ -38,7 +38,7 @@ function drawPlayerOnScreen(currentPlayer){
     <h4>${currentPlayer.position}</h4> 
     <h4>${currentPlayer.number}</h4> 
     <div class="btn-group"> 
-    <button>Remove</button>
+    <button onclick="removePlayer(event)">Remove</button>
     </div>`
     rosterElem.append(playerElem);  
     clearFields()  
@@ -48,4 +48,10 @@ function clearFields(){
     getElem("playerName").value = ""
     getElem("position").value = ""
     getElem("playerNumber").value = ""
+}
+
+function removePlayer (e){
+    debugger
+    var elem= $(e.target)
+    elem.closest(".playerCard").remove()
 }

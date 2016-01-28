@@ -15,19 +15,11 @@ NFL Roster
 
 
 
-When the add button is pressed, it should automatically add a player to the Roster.
-Create a constructor for Player that accepts 3 arguments, Name, Position, Number.
-When the Add button is pressed, a new player is created and added to the Players array.
-Use JQuery to target the "player-roster" div, and append the player.
 
-As a FAN of sports, I would like a dynamic roster where I can add/remove players from the list. So that I can visualize my sports team.
 
-I would like a form so that I can add a player to my roster easily.
-The form should have the following fields
-Player Name
-Player Position
-Player Number
-I would like the players added to show up in the roster section after being added.
+
+
+
 
 Done:
 Create an index.html file.
@@ -48,3 +40,14 @@ display the player's position
 display the player's number
 Create a from inside the "player-form" div
 Add an input field for Player Name, Position, and Number
+When the add button is pressed, it should automatically add a player to the Roster.
+Create a constructor for Player that accepts 3 arguments, Name, Position, Number.
+When the Add button is pressed, a new player is created and added to the Players array.
+Use JQuery to target the "player-roster" div, and append the player.
+I would like a form so that I can add a player to my roster easily.
+The form should have the following fields
+Player Name
+Player Position
+Player Number
+I would like the players added to show up in the roster section after being added.
+As a FAN of sports, I would like a dynamic roster where I can add/remove players from the list. So that I can visualize my sports team.

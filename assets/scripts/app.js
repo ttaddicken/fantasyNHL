@@ -52,5 +52,11 @@ function clearFields(){
 
 function removePlayer (e){
     var elem= $(e.target)
+    var currentId = elem.closest('[id]').attr('id')
+  
     elem.closest(".playerCard").remove()
+    roster.splice($.inArray(currentId, roster),1);
+  debugger
+   console.log(currentId)
+   console.log(roster)
 }

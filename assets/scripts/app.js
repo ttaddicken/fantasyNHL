@@ -49,7 +49,7 @@ function clearFields(){
     getElem("position").value = ""
     getElem("playerNumber").value = ""
 }
-
+// this removes player from rosters
 function removePlayer (e){
     var elem= $(e.target)
     var currentId = elem.closest('[id]').attr('id')

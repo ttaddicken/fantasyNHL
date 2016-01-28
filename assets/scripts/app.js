@@ -51,7 +51,6 @@ function clearFields(){
 }
 
 function removePlayer (e){
-    debugger
     var elem= $(e.target)
     elem.closest(".playerCard").remove()
 }
